@@ -2,31 +2,33 @@
 
 https://github.com/kts2442/carrot-clone
 
-# About 4.7 Modifiers for Forms - 230409
+# About 4.8 More Modifiers
 
-## 1. group modifer
+230409
 
-Parent의 상태를 기반으로 하부 Element들을 style 하고 싶을 때 사용
+## 1.detail HTML
 
-```
-< a href="#" className="group">
-< h3 className="group-hover:text-white transition">New project< /h3>
-< /a>
-```
-
-## 2. other useful modifier
-
-valid:
-invalid:
-required:
-focus-within:
-etc
-
-## 2. peer modifier
-
-sibling element의 state에 따라 style 하고 싶을때 사용
+HTML details emlments는 열고 닫힘을 통해 내용을 visible 유무 기능 제공
 
 ```
-< input class="peer"/ >
-< p class="peer-invalid:visible"> Pizza< /p>
+<details>
+  <summary className="cursor-pointer">
+    What is my fav.food
+  </summary>
+  <span className="selection"bg-indigo-300">김치</span>
+</details>
+```
+
+## 2. File input Button
+
+파일 수정자를 사용하여 파일 입력의 버튼 스타일 지정
+
+```
+<input type="file"
+  className="
+  file:mr-4 file:py-2 file:px-4
+  file:rounded-full file:border-0
+  file:text-sm file:font-semibold
+  file:bg-violet-50 file:text-violet-700
+"/>
 ```
