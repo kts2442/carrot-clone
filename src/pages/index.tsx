@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className="grid min-h-screen gap-5 space-y-5 bg-slate-400 py-20 px-10">
-      <div className="rounded-2xl bg-white p-6 shadow-2xl sm:bg-red-300 md:bg-indigo-300 lg:bg-teal-200">
+    <div className="grid min-h-screen gap-5 space-y-5 bg-slate-400 py-20 px-10 lg:grid-cols-2 xl:grid-cols-3 xl:place-content-center">
+      <div className="flex flex-col justify-between rounded-2xl bg-white p-6 shadow-2xl sm:bg-red-300 md:bg-indigo-300 lg:bg-teal-200">
         <span className="text-2xl font-semibold">Select Item</span>
         <ul>
           {["gray chair1", "gray chair2", "gray chair3", "gray chair4"].map(
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className="group overflow-hidden rounded-2xl bg-white shadow-2xl">
-        <div className="bg-blue-500 p-6 pb-14">
+        <div className="p-6 pb-14 xl:pb-52 portrait:bg-indigo-300 landscape:bg-indigo-300">
           <span className="text-2xl text-white">Profile</span>
         </div>
         <div className="relative -top-5 rounded-3xl bg-white p-6">
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-2xl bg-white p-10 shadow-2xl">
+      <div className="rounded-2xl bg-white p-10 shadow-2xl lg:col-span-2 xl:col-span-1">
         <div className="mb-3 flex items-center justify-between">
           <span>←</span>
           <div className="space-x-3">
