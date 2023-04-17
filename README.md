@@ -2,20 +2,22 @@
 
 https://github.com/kts2442/carrot-clone
 
-# About 4.10 Responsive Modifiers part Two
+# About 4.11 Dark Mode
 
 230417
 
-## window size 별 디자인
+## 컴퓨터 설정에 따른 dark mode
 
-- lg:grid-cols-2
-- lg:col-span-2
-- xl:grid-cols-3
+example
+dark:bg-slate-900
 
-## mobile에서 가로모드
+# 수동으로 dark mode 전환
 
-- lanscape:bg-teal-500
+```
+# tailwind.config.js
+module.exports=={
+  darkMode:'class'
+  # 기본은 'media'
+}
 
-## 세로모드
-
-- portrait:bg-indigo-300
+```

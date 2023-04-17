@@ -2,15 +2,17 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className="grid min-h-screen gap-5 space-y-5 bg-slate-400 py-20 px-10 lg:grid-cols-2 xl:grid-cols-3 xl:place-content-center">
-      <div className="flex flex-col justify-between rounded-2xl bg-white p-6 shadow-2xl sm:bg-red-300 md:bg-indigo-300 lg:bg-teal-200">
-        <span className="text-2xl font-semibold">Select Item</span>
+    <div className="dark grid min-h-screen gap-5 space-y-5 bg-slate-400 py-20 px-10 lg:grid-cols-2 xl:grid-cols-3 xl:place-content-center">
+      <div className="flex flex-col justify-between rounded-2xl bg-white p-6 shadow-2xl dark:bg-black  sm:bg-red-300 md:bg-indigo-300 lg:bg-teal-200">
+        <span className="text-2xl font-semibold dark:text-white">
+          Select Item
+        </span>
         <ul>
           {["gray chair1", "gray chair2", "gray chair3", "gray chair4"].map(
             (i) => (
-              <div key={i} className="my-2 flex justify-between">
-                <span className="text-gray-500">{i}</span>
-                <span className="font-semibold">$19</span>
+              <div key={i} className="my-2 flex justify-between ">
+                <span className="text-gray-500 dark:text-gray-100">{i}</span>
+                <span className="font-semibold dark:text-gray-100">$19</span>
               </div>
             )
           )}
