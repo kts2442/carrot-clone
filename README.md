@@ -2,33 +2,18 @@
 
 https://github.com/kts2442/carrot-clone
 
-# About 4.8 More Modifiers
+# About 4.9 Responsive Modifiers
 
-230409
+230417
 
-## 1.detail HTML
+## Mobiled First
 
-HTML details emlments는 열고 닫힘을 통해 내용을 visible 유무 기능 제공
+Tailwinds는 다른 프레임워크와는 반대로 모바일 사이즈부터 개발을 시작한다.
 
-```
-<details>
-  <summary className="cursor-pointer">
-    What is my fav.food
-  </summary>
-  <span className="selection"bg-indigo-300">김치</span>
-</details>
-```
-
-## 2. File input Button
-
-파일 수정자를 사용하여 파일 입력의 버튼 스타일 지정
-
-```
-<input type="file"
-  className="
-  file:mr-4 file:py-2 file:px-4
-  file:rounded-full file:border-0
-  file:text-sm file:font-semibold
-  file:bg-violet-50 file:text-violet-700
-"/>
-```
+Responsive modifier
+[
+sm:bg-red-300
+md: ~~
+lg: ~~
+xl: ~~~
+]
