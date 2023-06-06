@@ -2,23 +2,12 @@
 
 Serverless Carrot Market Clone using NextJS, Tailwind, Prisma, PlanetScale and Cloudflare.
 
-# About 6.6 Prisma Client
+# About 6.7 API Routes
 
 230606
 
-## npx prisma studio
+## API route
 
-- DB의 관리 UI를 prisma를 통해서 제공
-
-## prisma client
-
-- npm install @prisma/client
-- TypeScript 및 Node.js용 직관적인 데이터베이스 클라이언트
-  Prisma Client는 생각하는 방식으로 구성하고 앱에 맞춤화된 유형으로 Prisma 스키마에서 자동 생성되는 쿼리 빌더입니다.
-- npm install @prisma/client
-
-```
-import { PrismaClient } from '@prisma/client'
-
-const prisma = new PrismaClient()
-```
+- API route는 Next.js로 API를 빌드하기 위한 솔루션을 제공합니다.
+- pages/api 폴더 내의 모든 파일은 /api/\*에 매핑되며 API endpoint로 처리됩니다.
+- server-side 전용 번들이며 client-side 번들 크기를 늘리지 않습니다.
